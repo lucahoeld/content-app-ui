@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f4f4f6">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Content">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Content Inspiration</title>
+</head>
+<body>
+<div id="app">
+  <main id="screen"></main>
+  <nav class="tabbar">
+    <button data-tab="home" class="active"><span>⌂</span>Home</button>
+    <button data-tab="ideas"><span>✦</span>Ideen</button>
+    <button data-tab="business"><span>▣</span>Business</button>
+    <button data-tab="favorites"><span>♥</span>Favoriten</button>
+    <button data-tab="profile"><span>●</span>Profil</button>
+  </nav>
+</div>
+
+<div id="modal" class="modal hidden">
+  <div class="sheet">
+    <div class="sheet-head"><h2>Neue Idee</h2><button id="closeModal">✕</button></div>
+    <label>Business<select id="newBusiness"></select></label>
+    <label>Format<select id="newType"></select></label>
+    <label>Titel<input id="newTitle" placeholder="Titel"></label>
+    <label>Idee<textarea id="newText" placeholder="Beschreibe deine Content-Idee..."></textarea></label>
+    <label>Hook (optional)<input id="newHook" placeholder="Hook"></label>
+    <label>Call to Action (optional)<input id="newCTA" placeholder="CTA"></label>
+    <button id="saveIdea" class="primary full">Idee speichern</button>
+  </div>
+</div>
+
+<script src="ideas.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
